@@ -1,6 +1,10 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
 body {
     text-align: center;
-    background-color: black;
   }
   
   textarea {
@@ -12,8 +16,12 @@ body {
     display: inline-block;
     background: #f4f4f9;
     outline: none;
+    margin-top: 5px;;
     font-family: Courier, sans-serif;
     font-size: 14px;
+    background-color: black;
+    color:white;
+    color: oran;
   }
   
   iframe {
@@ -21,5 +29,18 @@ body {
     position: relative;
     width: 100%;
     height: 35em;
-    background-color: none;
+  }
+  .navigation
+  {
+    display: grid;
+    position: relative;
+    background-color: orangered;
+    color: white;
+    width: 100%;
+    height: 10%;;
+    margin: auto;
+  }
+  .navigation h1
+  {
+    margin: auto;
   }
