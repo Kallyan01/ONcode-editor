@@ -9,14 +9,29 @@
   <body>
     <nav>
       <div class="navigation">
-        <h1>UrWebM</h1>
+        <h1>MicroLeet</h1>
       </div>
     </nav>
-    <textarea id="html" placeholder="HTML"></textarea>
-    <textarea id="css" placeholder="CSS"></textarea>
-    <textarea id="js" placeholder="JavaScript"></textarea>
+    <textarea id="html" id="down" class="down" placeholder="HTML"></textarea>
+
+    Download button: <br />
+    <input value='download' type='button'
+    onclick='doDL(document.getElementById("html").value)' />
+
+    <textarea id="css" class="down"  placeholder="CSS"></textarea>
+    <textarea id="js" class="down" placeholder="JavaScript"></textarea>
     <iframe id="code"></iframe>
 
     <script type="text/javascript" src="app.js"></script>
+
+
+
+<script type='text/javascript'>
+function doDL(s){
+    function dataUrl(data) {return "data:x-application/text," + escape(data);}
+    window.open(dataUrl(s));
+}
+</script>
+
   </body>
 </html>
